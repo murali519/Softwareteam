@@ -1,0 +1,360 @@
+ACS-12F-ATAI-SW2#sh running-config
+config-file-header
+ACS-12F-ATAI-SW2
+v1.4.11.5 / R800_NIK_1_4_220_026
+CLI v1.0
+set system mode switch
+
+file SSD indicator encrypted
+@
+ssd-control-start
+ssd config
+ssd file passphrase control unrestricted
+no ssd file integrity control
+ssd-control-end cb0a3fdb1f3a1af4e4430033719968c0
+!
+vlan database
+vlan 31,43,62,88,120-121,146,149,166,168,170,186,220
+exit
+voice vlan oui-table add 0001e3 Siemens_AG_phone________
+voice vlan oui-table add 00036b Cisco_phone_____________
+voice vlan oui-table add 00096e Avaya___________________
+voice vlan oui-table add 000fe2 H3C_Aolynk______________
+voice vlan oui-table add 0060b9 Philips_and_NEC_AG_phone
+voice vlan oui-table add 00d01e Pingtel_phone___________
+voice vlan oui-table add 00e075 Polycom/Veritel_phone___
+voice vlan oui-table add 00e0bb 3Com_phone______________
+hostname ACS-12F-ATAI-SW2
+enable password level 15 encrypted f51292d59beeee4e6d98f7aa0341e53e35fbb76a
+username nwspt password encrypted 50ff3946e7a706a8add04c3fb47235d06ab4ee8b privilege 15
+username varaprasad password encrypted 50ff3946e7a706a8add04c3fb47235d06ab4ee8b privilege 15
+ip ssh server
+ip ssh password-auth
+ip ssh pubkey-auth auto-login
+ip domain name soct.com
+!
+interface vlan 146
+ ip address 192.168.146.6 255.255.254.0
+ no ip address dhcp
+!
+interface gigabitethernet1
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet2
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet3
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet4
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet5
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet6
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet7
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet8
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet9
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet10
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet11
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet12
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet13
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet14
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet15
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet16
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet17
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet18
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet19
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet20
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet21
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet22
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet23
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet24
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet25
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet26
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet27
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet28
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet29
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet30
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet31
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet32
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet33
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet34
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet35
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet36
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet37
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet38
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet39
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet40
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet41
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet42
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet43
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet44
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet45
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet46
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet47
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet48
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport mode access
+ switchport access vlan 120
+!
+interface gigabitethernet49
+ storm-control broadcast level 1
+ storm-control include-multicast
+ switchport trunk allowed vlan add 31,43,62,88,120-121,146,149,166
+ switchport trunk allowed vlan add 168,170,186,220
+!
+interface gigabitethernet50
+ storm-control broadcast level 1
+ storm-control include-multicast
+!
+int        erface gigabitethernet51
+ description ***Uplink***
+ storm-control broadcast level 2
+ storm-control include-multicast
+ channel-group 1 mode auto
+!
+interface gigabitethernet52
+ description ***Uplink***
+ channel-group 1 mode auto
+ macro description switch
+!
+interface Port-channel1
+ switchport trunk allowed vlan add 31,43,62,88,120-121,146,149,166
+ switchport trunk allowed vlan add 168,186,220
+!
+interface Port-channel2
+ switchport trunk allowed vlan add 31,43,62,88,120-121,146,149,166
+ switchport trunk allowed vlan add 168,170,186,220
+!
+exit
+macro auto disabled
+ip default-gateway 192.168.146.254
+ACS-12F-ATAI-SW2#

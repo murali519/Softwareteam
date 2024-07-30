@@ -1,0 +1,1506 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2024.05.07 18:21:36 =~=~=~=~=~=~=~=~=~=~=~=
+
+SS-CORE-SWITCH>
+SS-CORE-SWITCH>
+SS-CORE-SWITCH>
+SS-CORE-SWITCH>en
+SS-CORE-SWITCH>enable 
+Password: 
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh
+SS-CORE-SWITCH#sho
+SS-CORE-SWITCH#show ru
+SS-CORE-SWITCH#show running-config 
+Building configuration...
+
+Current configuration : 23517 bytes
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname SS-CORE-SWITCH
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$S9T9$r6lZGCRvb7abCvqGoYVlK.
+!
+username shmahamood privilege 15 secret 5 $1$ktOH$oo.6vkFJVVVP7OI1QNJ6n/
+username ashok privilege 15 secret 5 $1$FAgD$HavIUCfDzeZquf1Csuk1f/
+username nwspt privilege 15 password 7 080F5B0A1C293547001F2C0D243D
+!
+!
+no aaa new-model
+clock timezone IST 5 30
+ --More--         switch 1 provision ws-c3750g-48ps
+system mtu routing 1500
+vtp domain INEDA.com
+vtp mode transparent
+authentication mac-move permit
+ip subnet-zero
+ip routing
+ip domain-name invecas.com
+ip dhcp excluded-address 10.60.69.50 10.60.69.53
+ip dhcp excluded-address 10.60.69.56
+ip dhcp excluded-address 10.60.69.60
+ip dhcp excluded-address 10.60.62.10 10.60.62.16
+ip dhcp excluded-address 10.60.62.71
+ip dhcp excluded-address 10.60.62.103
+ip dhcp excluded-address 10.60.62.107
+ip dhcp excluded-address 10.60.62.102
+ip dhcp excluded-address 10.60.62.104
+ip dhcp excluded-address 10.60.62.122
+ip dhcp excluded-address 10.60.62.119
+ip dhcp excluded-address 10.60.62.133
+ip dhcp excluded-address 10.60.62.138
+ip dhcp excluded-address 10.60.62.60
+ip dhcp excluded-address 10.60.62.200
+ --More--         ip dhcp excluded-address 10.60.62.53
+ip dhcp excluded-address 10.60.62.148
+ip dhcp excluded-address 10.60.62.121
+ip dhcp excluded-address 10.60.62.143
+ip dhcp excluded-address 10.60.62.145
+ip dhcp excluded-address 10.60.62.205
+ip dhcp excluded-address 10.60.62.166
+ip dhcp excluded-address 10.60.62.43
+ip dhcp excluded-address 10.60.62.30
+ip dhcp excluded-address 10.60.62.31
+ip dhcp excluded-address 10.60.62.32
+ip dhcp excluded-address 10.60.62.33
+ip dhcp excluded-address 10.60.62.41
+ip dhcp excluded-address 10.60.62.51
+ip dhcp excluded-address 10.60.62.56
+ip dhcp excluded-address 10.60.62.59
+ip dhcp excluded-address 10.60.62.129
+ip dhcp excluded-address 10.60.62.42
+ip dhcp excluded-address 10.60.62.79
+ip dhcp excluded-address 10.60.62.83
+ip dhcp excluded-address 10.60.62.94
+ip dhcp excluded-address 10.60.62.97
+ip dhcp excluded-address 10.60.62.113
+ --More--         ip dhcp excluded-address 10.60.62.137
+ip dhcp excluded-address 10.60.62.140
+ip dhcp excluded-address 192.168.6.85
+ip dhcp excluded-address 192.168.6.79
+ip dhcp excluded-address 192.168.6.15
+ip dhcp excluded-address 192.168.6.167
+ip dhcp excluded-address 192.168.6.77
+ip dhcp excluded-address 192.168.6.52
+ip dhcp excluded-address 192.168.6.65
+ip dhcp excluded-address 192.168.6.80
+ip dhcp excluded-address 192.168.6.76
+ip dhcp excluded-address 192.168.6.90
+ip dhcp excluded-address 192.168.6.62
+ip dhcp excluded-address 192.168.6.72
+ip dhcp excluded-address 192.168.6.56
+ip dhcp excluded-address 192.168.6.60
+ip dhcp excluded-address 192.168.6.69
+ip dhcp excluded-address 192.168.6.81
+ip dhcp excluded-address 192.168.6.218
+ip dhcp excluded-address 192.168.6.227
+ip dhcp excluded-address 192.168.6.219
+ip dhcp excluded-address 192.168.6.229
+ip dhcp excluded-address 192.168.6.150
+ --More--         ip dhcp excluded-address 192.168.6.55
+ip dhcp excluded-address 192.168.6.176
+ip dhcp excluded-address 192.168.6.74
+ip dhcp excluded-address 192.168.6.4
+ip dhcp excluded-address 192.168.6.12
+ip dhcp excluded-address 192.168.6.58
+ip dhcp excluded-address 192.168.6.7
+ip dhcp excluded-address 192.168.6.6
+ip dhcp excluded-address 192.168.6.66
+ip dhcp excluded-address 192.168.6.8
+ip dhcp excluded-address 192.168.6.5
+ip dhcp excluded-address 192.168.6.10
+ip dhcp excluded-address 192.168.6.68
+ip dhcp excluded-address 192.168.6.53
+ip dhcp excluded-address 192.168.8.103
+ip dhcp excluded-address 192.168.8.104
+ip dhcp excluded-address 192.168.8.102
+ip dhcp excluded-address 192.168.8.101
+ip dhcp excluded-address 192.168.8.115
+ip dhcp excluded-address 192.168.8.73
+ip dhcp excluded-address 192.168.8.203
+ip dhcp excluded-address 192.168.8.39
+ip dhcp excluded-address 192.168.8.223
+ --More--         ip dhcp excluded-address 192.168.8.49
+ip dhcp excluded-address 192.168.8.24
+ip dhcp excluded-address 192.168.8.18
+ip dhcp excluded-address 192.168.8.93
+ip dhcp excluded-address 192.168.8.100
+ip dhcp excluded-address 192.168.8.7
+ip dhcp excluded-address 192.168.8.10
+ip dhcp excluded-address 192.168.8.169
+ip dhcp excluded-address 192.168.8.176
+ip dhcp excluded-address 192.168.8.165
+ip dhcp excluded-address 192.168.8.12
+ip dhcp excluded-address 192.168.8.217
+ip dhcp excluded-address 192.168.8.127
+ip dhcp excluded-address 192.168.8.170
+ip dhcp excluded-address 192.168.8.54
+ip dhcp excluded-address 192.168.8.43
+ip dhcp excluded-address 192.168.8.38
+ip dhcp excluded-address 192.168.8.158
+ip dhcp excluded-address 192.168.8.33
+ip dhcp excluded-address 192.168.8.134
+ip dhcp excluded-address 192.168.8.196
+ip dhcp excluded-address 192.168.8.41
+ip dhcp excluded-address 192.168.8.68
+ --More--         ip dhcp excluded-address 192.168.8.34
+ip dhcp excluded-address 192.168.8.22
+ip dhcp excluded-address 192.168.8.51
+ip dhcp excluded-address 192.168.8.226
+ip dhcp excluded-address 192.168.8.86
+ip dhcp excluded-address 192.168.8.209
+ip dhcp excluded-address 192.168.8.112
+ip dhcp excluded-address 192.168.8.66
+ip dhcp excluded-address 192.168.8.9
+ip dhcp excluded-address 192.168.8.37
+ip dhcp excluded-address 192.168.8.79
+ip dhcp excluded-address 192.168.8.42
+ip dhcp excluded-address 192.168.8.32
+ip dhcp excluded-address 192.168.8.30
+ip dhcp excluded-address 192.168.8.20
+ip dhcp excluded-address 192.168.26.44
+ip dhcp excluded-address 192.168.26.128
+ip dhcp excluded-address 192.168.26.111
+ip dhcp excluded-address 192.168.26.15
+ip dhcp excluded-address 192.168.26.210
+ip dhcp excluded-address 192.168.26.12
+ip dhcp excluded-address 192.168.26.14
+ip dhcp excluded-address 192.168.26.62
+ --More--         ip dhcp excluded-address 192.168.26.32
+ip dhcp excluded-address 192.168.26.19
+ip dhcp excluded-address 192.168.26.64
+ip dhcp excluded-address 192.168.26.54
+ip dhcp excluded-address 192.168.26.1
+ip dhcp excluded-address 192.168.26.95
+ip dhcp excluded-address 192.168.26.70
+ip dhcp excluded-address 192.168.26.3
+ip dhcp excluded-address 192.168.26.196
+ip dhcp excluded-address 192.168.26.21
+ip dhcp excluded-address 192.168.26.50
+ip dhcp excluded-address 192.168.26.39
+ip dhcp excluded-address 192.168.26.49
+ip dhcp excluded-address 192.168.26.74
+ip dhcp excluded-address 192.168.26.108
+ip dhcp excluded-address 192.168.26.84
+ip dhcp excluded-address 192.168.26.18
+ip dhcp excluded-address 192.168.26.38
+ip dhcp excluded-address 192.168.26.57
+ip dhcp excluded-address 192.168.26.4
+ip dhcp excluded-address 192.168.26.51
+ip dhcp excluded-address 192.168.26.240
+ip dhcp excluded-address 192.168.26.236
+ --More--         ip dhcp excluded-address 192.168.26.159
+ip dhcp excluded-address 192.168.26.79
+ip dhcp excluded-address 192.168.26.208
+ip dhcp excluded-address 192.168.26.65
+ip dhcp excluded-address 192.168.26.242
+ip dhcp excluded-address 192.168.26.206
+ip dhcp excluded-address 192.168.26.76
+ip dhcp excluded-address 192.168.26.152
+ip dhcp excluded-address 192.168.26.63
+ip dhcp excluded-address 192.168.26.251
+ip dhcp excluded-address 192.168.26.179
+ip dhcp excluded-address 192.168.26.197
+ip dhcp excluded-address 192.168.26.8
+ip dhcp excluded-address 192.168.26.223
+ip dhcp excluded-address 192.168.26.99
+ip dhcp excluded-address 192.168.26.106
+ip dhcp excluded-address 192.168.26.177
+ip dhcp excluded-address 192.168.26.142
+ip dhcp excluded-address 192.168.26.228
+ip dhcp excluded-address 192.168.26.157
+ip dhcp excluded-address 192.168.26.213
+ip dhcp excluded-address 192.168.26.127
+ip dhcp excluded-address 192.168.26.93
+ --More--         ip dhcp excluded-address 192.168.26.86
+ip dhcp excluded-address 192.168.26.135
+ip dhcp excluded-address 192.168.26.234
+ip dhcp excluded-address 192.168.26.200
+ip dhcp excluded-address 192.168.26.47
+ip dhcp excluded-address 192.168.26.131
+ip dhcp excluded-address 192.168.26.216
+ip dhcp excluded-address 192.168.26.217
+ip dhcp excluded-address 192.168.26.36
+ip dhcp excluded-address 192.168.26.43
+ip dhcp excluded-address 192.168.26.40
+ip dhcp excluded-address 192.168.26.113
+ip dhcp excluded-address 192.168.26.117
+ip dhcp excluded-address 192.168.26.59
+ip dhcp excluded-address 192.168.26.201
+ip dhcp excluded-address 192.168.26.219
+ip dhcp excluded-address 192.168.26.148
+ip dhcp excluded-address 192.168.26.107
+ip dhcp excluded-address 192.168.26.94
+ip dhcp excluded-address 192.168.26.100
+ip dhcp excluded-address 192.168.26.66
+ip dhcp excluded-address 192.168.26.97
+ip dhcp excluded-address 192.168.26.78
+ --More--         ip dhcp excluded-address 192.168.26.73
+ip dhcp excluded-address 192.168.26.103
+ip dhcp excluded-address 192.168.26.23
+ip dhcp excluded-address 192.168.26.91
+ip dhcp excluded-address 192.168.26.20
+ip dhcp excluded-address 192.168.26.58
+ip dhcp excluded-address 192.168.26.2
+ip dhcp excluded-address 192.168.26.68
+ip dhcp excluded-address 192.168.26.9
+ip dhcp excluded-address 192.168.26.90
+ip dhcp excluded-address 192.168.26.35
+ip dhcp excluded-address 192.168.26.105
+ip dhcp excluded-address 192.168.26.114
+ip dhcp excluded-address 10.60.67.250 10.60.67.254
+ip dhcp excluded-address 10.60.67.1 10.60.67.110
+ip dhcp excluded-address 10.60.67.1 10.60.67.20
+!
+ip dhcp pool 10.60.62.0
+   network 10.60.62.0 255.255.255.0
+   default-router 10.60.62.254 
+   dns-server 192.168.4.80 192.168.4.89 
+!
+ip dhcp pool 10.60.69.0
+ --More--            network 10.60.69.0 255.255.255.0
+   default-router 10.60.69.254 
+   dns-server 192.168.4.80 192.168.4.89 
+!
+ip dhcp pool 192.168.44.0
+   network 192.168.44.0 255.255.255.0
+   default-router 192.168.44.254 
+   dns-server 192.168.4.80 192.168.4.89 
+!
+ip dhcp pool 10.60.67.0
+   network 10.60.67.0 255.255.255.0
+   default-router 10.60.67.254 
+   dns-server 192.168.4.80 192.168.4.89 
+!
+ip dhcp pool 192.168.7.0
+   network 192.168.7.0 255.255.255.0
+   default-router 192.168.7.254 
+   dns-server 192.168.4.80 192.168.4.89 
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1078889856
+ --More--          enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1078889856
+ revocation-check none
+ rsakeypair TP-self-signed-1078889856
+!
+!
+crypto pki certificate chain TP-self-signed-1078889856
+ certificate self-signed 01
+  30820252 308201BB A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31303738 38383938 3536301E 170D3933 30333031 30303032 
+  35375A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 30373838 
+  38393835 3630819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100A99B 6349E33F 73F6D588 536C25B2 F805C972 5DA95555 AA971F00 4FC53958 
+  E08B9ACC 46FCEBAA B88C83F6 673505BD 4F22C38F 867B3AD1 F38E8FE4 F1A55F45 
+  C5F65A00 0DD5C44B 05C60B53 529BD47A 043D20F4 E7539ECA B705AF4F F9F725C1 
+  731A83C7 DD818B69 046453E6 48F7B72E FAC40238 9E4D1705 35D9BDCB EDCF5B45 
+  55B30203 010001A3 7A307830 0F060355 1D130101 FF040530 030101FF 30250603 
+  551D1104 1E301C82 1A53532D 434F5245 2D535749 5443482E 696E7665 6361732E 
+  636F6D30 1F060355 1D230418 30168014 B1A8FEA0 D66ADC51 8CA104C9 C1776314 
+  05F75D52 301D0603 551D0E04 160414B1 A8FEA0D6 6ADC518C A104C9C1 77631405 
+  F75D5230 0D06092A 864886F7 0D010104 05000381 810002BD 2E9DAB08 96F0494F 
+ --More--           4668E9CC 6218FA61 2ACD757E F9B6CF4D F036460F 2BD37542 FB9C67DB 47B306DC 
+  53599D79 62AF01BE 36505917 43E675A0 66AE364E BA7A636B 564CE8FB 60C49971 
+  A4A61320 ACA37CDF 276B57AA 60EA22D6 4B3917D1 7193F9E7 B2BC9620 51F28EFA 
+  B1514221 0FB57590 286A2B8B 69BCE94B D32A7EF3 ADF7
+  quit
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree etherchannel guard misconfig
+spanning-tree extend system-id
+spanning-tree vlan 1-114 priority 4096
+!
+vlan internal allocation policy ascending
+!
+vlan 2
+ name INEDA-Servers
+!
+vlan 3
+ name Mentor_ODC
+!
+vlan 4
+ --More--          name Cirrus_Network
+!
+vlan 5
+ name AMD-License-Subnet
+!
+vlan 6
+ name Servers_ILO
+!
+vlan 7
+ name Atai_Lab
+!
+vlan 8
+ name INTERNET_VLAN
+!
+vlan 9
+ name free2
+!
+vlan 10
+ name Vmware_Network
+!
+vlan 11
+ name P2P-New-Campus
+!
+ --More--         vlan 12
+ name Conference_Desktops
+!
+vlan 14
+ name Squid_Network
+!
+vlan 15
+ name SoCtronics_Desktop
+!
+vlan 16
+ name GENERAL_INTERNET
+!
+vlan 17
+ name free5
+!
+vlan 18
+ name Velco_SimNetwork
+!
+vlan 19
+ name Cyberoam_Network
+!
+vlan 20
+ name DMZ
+ --More--         !
+vlan 21
+ name Admin_Network
+!
+vlan 22
+ name Makuta_P2P
+!
+vlan 23
+ name Custsupprt_Network
+!
+vlan 24
+ name VOIP
+!
+vlan 25
+ name FIO_Network
+!
+vlan 26
+ name Cirrus_Tunnel
+!
+vlan 27
+ name SS_TT_RDP_Network
+!
+vlan 28
+ --More--          name Lattice_Network
+!
+vlan 29
+ name Atai_Network
+!
+vlan 30
+ name Stanford_RDP_network
+!
+vlan 31
+ name SoC_Wireless
+!
+vlan 32
+ name PhoneAccess_Ctrl_Net
+!
+vlan 33
+ name DATACOPY
+!
+vlan 40
+ name P2P_All_Sites
+!
+vlan 41
+ name P2P-INEDA
+!
+ --More--         vlan 48 
+!
+vlan 50
+ name INTERNETTEST
+!
+vlan 51
+ name Access-Through-PubIP
+!
+vlan 65
+ name VOICE
+!
+vlan 67
+ name VEDA
+!
+vlan 70
+ name WiFi-Mgmt
+!
+vlan 100
+ name TSMC
+!
+vlan 110
+ name INTEL-ODC
+!
+ --More--         vlan 114
+ name AMD-VPN
+!
+vlan 120
+ name CS-SoC
+!
+vlan 421 
+!
+vlan 999
+ remote-span
+lldp run
+!
+!
+!
+!
+interface Port-channel1
+ description "TRUNK SS1 to SS CiscoSwitch"
+ switchport access vlan 21
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+!
+interface Port-channel3
+ --More--          description "TRUNK SS1 to Sudha"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+!
+interface Port-channel4
+ description "TRUNK SS2 to LinksysGigabit"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+!
+interface Port-channel5
+ description "TRUNK SS2 to IIIrd Floor LinksysGigabit"
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,2,4-999
+ switchport mode trunk
+!
+interface Port-channel6
+ description "TRUNK SS2 to IIIrd Floor LinksysGigabit2"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+!
+ --More--         interface Port-channel7
+ description "Port Channel for NETAPP Control 1"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel8
+ description "Port Channel for NETAPP Control 2"
+ switchport access vlan 32
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+!
+interface Port-channel9
+ description "TRUNK SS2 to TT Uplink"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel10
+ switchport access vlan 40
+ switchport mode access
+!
+interface Port-channel11
+ switchport trunk encapsulation dot1q
+ --More--          switchport trunk allowed vlan 40
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+ channel-group 4 mode on
+!
+interface GigabitEthernet1/0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+ channel-group 4 mode on
+!
+interface GigabitEthernet1/0/3
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 40
+ switchport mode trunk
+ channel-group 11 mode active
+!
+interface GigabitEthernet1/0/4
+ switchport access vlan 7
+ --More--          switchport mode access
+ storm-control broadcast level 1.00
+ storm-control multicast level 1.00
+!
+interface GigabitEthernet1/0/5
+ switchport access vlan 7
+ switchport mode access
+ storm-control broadcast level 1.00
+ storm-control multicast level 1.00
+!
+interface GigabitEthernet1/0/6
+ switchport access vlan 7
+ switchport mode access
+ storm-control broadcast level 1.00
+ storm-control multicast level 1.00
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/7
+ switchport access vlan 7
+ switchport mode access
+!
+interface GigabitEthernet1/0/8
+ description "TRUNK SS2 to IIIrd Floor LinksysGigabit2"
+ --More--          switchport trunk encapsulation dot1q
+ switchport mode trunk
+ shutdown
+ flowcontrol receive on
+ channel-group 6 mode on
+!
+interface GigabitEthernet1/0/9
+ description ***2FMainDoorAccessControl***
+ switchport access vlan 29
+ switchport mode access
+ power inline never
+!
+interface GigabitEthernet1/0/10
+ switchport access vlan 3
+ switchport mode access
+!
+interface GigabitEthernet1/0/11
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/12
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ --More--         !
+interface GigabitEthernet1/0/13
+ switchport access vlan 18
+ switchport mode access
+!
+interface GigabitEthernet1/0/14
+ switchport access vlan 18
+!
+interface GigabitEthernet1/0/15
+ switchport access vlan 21
+ switchport mode access
+!
+interface GigabitEthernet1/0/16
+!
+interface GigabitEthernet1/0/17
+ switchport access vlan 21
+ switchport voice vlan 24
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/18
+!
+interface GigabitEthernet1/0/19
+ switchport access vlan 65
+ --More--          switchport mode access
+!
+interface GigabitEthernet1/0/20
+ switchport access vlan 65
+ switchport mode access
+!
+interface GigabitEthernet1/0/21
+ switchport access vlan 65
+ switchport mode access
+!
+interface GigabitEthernet1/0/22
+ switchport access vlan 4
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/23
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,2,4-999
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/24
+ description "TRUNK SS2 to TT Uplink"
+ switchport trunk encapsulation dot1q
+ --More--          switchport trunk allowed vlan 1,2,4-999
+ switchport mode trunk
+ shutdown
+ channel-group 5 mode active
+!
+interface GigabitEthernet1/0/25
+ switchport access vlan 29
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/26
+ switchport access vlan 9
+!
+interface GigabitEthernet1/0/27
+ switchport access vlan 21
+!
+interface GigabitEthernet1/0/28
+ switchport access vlan 18
+!
+interface GigabitEthernet1/0/29
+ switchport access vlan 18
+!
+interface GigabitEthernet1/0/30
+ --More--         !
+interface GigabitEthernet1/0/31
+!
+interface GigabitEthernet1/0/32
+ switchport access vlan 18
+!
+interface GigabitEthernet1/0/33
+ switchport access vlan 114
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet1/0/34
+ switchport access vlan 20
+!
+interface GigabitEthernet1/0/35
+ switchport access vlan 70
+ switchport mode access
+!
+interface GigabitEthernet1/0/36
+ switchport access vlan 21
+!
+interface GigabitEthernet1/0/37
+ switchport trunk encapsulation dot1q
+ --More--          switchport mode trunk
+!
+interface GigabitEthernet1/0/38
+!
+interface GigabitEthernet1/0/39
+ switchport access vlan 32
+!
+interface GigabitEthernet1/0/40
+ description ***Connected to PA***
+ no switchport
+ ip address 192.168.181.254 255.255.255.0
+!
+interface GigabitEthernet1/0/41
+ description ***New-Uplink to SE For VEDA***
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/42
+ description "SS(Main Switch) IInd Floor to IInd Floor"
+ switchport access vlan 21
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+ --More--         interface GigabitEthernet1/0/43
+ description "SS(Main Switch) IInd Floor to IInd Floor Linksys1 Uplink"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/44
+ description ***Connected to New Campus***
+ no switchport
+ ip address 10.254.7.6 255.255.255.240
+ storm-control broadcast level 4.00
+ storm-control multicast level 4.00
+!
+interface GigabitEthernet1/0/45
+ description "TRUNK SS1 to Sudha"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+!
+interface GigabitEthernet1/0/46
+ description "SS(Main Switch) IInd Floor to IIIrd Floor"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+ --More--         interface GigabitEthernet1/0/47
+ description "TRUNK SS1 to Sudha"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ flowcontrol receive on
+ channel-group 3 mode active
+!
+interface GigabitEthernet1/0/48
+ description "TRUNK SS2 to IIIrd Floor LinksysGigabit"
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/49
+!
+interface GigabitEthernet1/0/50
+!
+interface GigabitEthernet1/0/51
+!
+interface GigabitEthernet1/0/52
+!
+interface Vlan1
+ ip address 192.168.8.254 255.255.255.0
+ ip access-group SPAM-IP in
+ --More--          ip helper-address 192.168.26.96
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ shutdown
+!
+interface Vlan4
+ ip address 192.168.26.254 255.255.255.0
+ ip access-group 101 out
+ ip helper-address 192.168.4.80
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+!
+interface Vlan7
+ ip address 10.60.69.254 255.255.255.0
+ ip access-group SPAM-IP in
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+!
+interface Vlan15
+ no ip address
+ --More--          ip access-group SPAM-IP in
+ ip helper-address 192.168.26.96
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ shutdown
+!
+interface Vlan18
+ ip address 192.168.44.254 255.255.255.0
+ ip access-group 101 out
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+!
+interface Vlan21
+ description ***TempTT**
+ ip address 192.168.7.254 255.255.255.0
+!
+interface Vlan24
+ description ***Voice-Vonage***
+ ip address 192.168.229.254 255.255.255.0
+!
+interface Vlan29
+ --More--          ip address 10.60.62.254 255.255.255.0
+ ip access-group SPAM-IP in
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+!
+interface Vlan65
+ description ***VOICE GW***
+ ip address 10.60.65.254 255.255.255.0
+!
+interface Vlan67
+ description ***VEDA LAN***
+ ip address 10.60.67.254 255.255.255.0
+!
+interface Vlan70
+ description ***WiFi Mgmt***
+ ip address 10.60.70.254 255.255.255.0
+!
+interface Vlan114
+ ip address 192.168.114.254 255.255.255.0
+ ip access-group temp-suman-ubuntu in
+ ip helper-address 192.168.4.80
+ no ip redirects
+ --More--          no ip unreachables
+ no ip proxy-arp
+!
+ip default-gateway 192.168.4.254
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.254.7.3
+ip http server
+ip http secure-server
+!
+!
+ip access-list extended SPAM-IP
+ deny   ip host 10.60.62.148 any
+ deny   ip any host 113.196.105.87 log
+ deny   ip any host 104.27.148.211
+ deny   ip any host 128.199.197.217 log
+ deny   ip any host 73.189.204.20
+ permit ip any any
+ip access-list extended VEDA
+ permit ip host 10.60.67.1 192.168.28.0 0.0.0.255
+ip access-list extended temp-suman-ubuntu
+ permit ip 192.168.114.0 0.0.0.255 host 192.168.4.225
+ permit ip 192.168.114.0 0.0.0.255 host 192.168.4.80
+ permit ip 192.168.114.0 0.0.0.255 host 192.168.4.73
+ --More--          permit ip 192.168.114.0 0.0.0.255 10.252.0.0 0.0.1.255
+ permit ip 192.168.114.0 0.0.0.255 host 192.168.4.76
+ permit ip 192.168.114.0 0.0.0.255 10.254.254.0 0.0.0.255
+ permit ip 192.168.114.0 0.0.0.255 host 192.168.114.254
+ permit tcp 192.168.114.0 0.0.0.255 host 10.50.75.137 eq 443
+ permit icmp 192.168.114.0 0.0.0.255 host 10.50.75.137
+ permit tcp 192.168.114.0 0.0.0.255 host 10.50.75.137 eq 33001
+ permit udp 192.168.114.0 0.0.0.255 host 10.50.75.137 eq 33001
+ deny   ip 192.168.114.0 0.0.0.255 10.0.0.0 0.255.255.255
+ deny   ip 192.168.114.0 0.0.0.255 172.16.0.0 0.0.15.255
+ deny   ip 192.168.114.0 0.0.0.255 192.168.0.0 0.0.255.255
+ permit ip any any
+!
+ip sla enable reaction-alerts
+access-list 101 deny   ip any 192.168.22.0 0.0.0.255
+access-list 101 deny   ip any 192.168.3.0 0.0.0.255
+access-list 101 deny   ip any 192.168.14.0 0.0.0.255
+access-list 101 deny   ip any 192.168.101.0 0.0.0.255
+access-list 101 deny   ip any host 113.196.105.87
+access-list 101 deny   ip any host 104.27.148.211
+access-list 101 deny   ip any host 128.199.197.217
+access-list 101 deny   ip any host 73.189.204.20
+access-list 101 permit ip any any
+ --More--         !
+snmp-server community SoCtronics RW
+snmp-server community SoCtronics@es0 RW
+snmp-server location SEG
+snmp-server contact ksivanandam - Network Admin
+snmp-server chassis-id Cisco3750M
+snmp-server enable traps snmp linkdown linkup coldstart warmstart
+snmp-server host 192.168.4.123 version 2c SoCtronics 
+!
+!
+line con 0
+line vty 0 4
+ password 7 06351F205E45051C544541
+ login local
+ transport input all
+line vty 5 15
+ login
+ transport input none
+!
+ntp clock-period 36029173
+ntp server 10.50.72.11
+end
+
+SS-CORE-SWITCH# 
+SS-CORE-SWITCH#show
+SS-CORE-SWITCH#show vl
+SS-CORE-SWITCH#show vlan 
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi1/0/1, Gi1/0/2, Gi1/0/3
+                                                Gi1/0/8, Gi1/0/11, Gi1/0/12
+                                                Gi1/0/16, Gi1/0/18, Gi1/0/23
+                                                Gi1/0/24, Gi1/0/30, Gi1/0/31
+                                                Gi1/0/37, Gi1/0/38, Gi1/0/41
+                                                Gi1/0/43, Gi1/0/45, Gi1/0/46
+                                                Gi1/0/47, Gi1/0/48, Gi1/0/49
+                                                Gi1/0/50, Gi1/0/51, Gi1/0/52
+2    INEDA-Servers                    active    
+3    Mentor_ODC                       active    Gi1/0/10
+4    Cirrus_Network                   active    Gi1/0/22
+5    AMD-License-Subnet               active    
+6    Servers_ILO                      active    
+7    Atai_Lab                         active    Gi1/0/4, Gi1/0/5, Gi1/0/6
+                                                Gi1/0/7
+8    INTERNET_VLAN                    active    
+9    free2                            active    Gi1/0/26
+10   Vmware_Network                   active    
+11   P2P-New-Campus                   active    
+12   Conference_Desktops              active    
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+14   Squid_Network                    active    
+15   SoCtronics_Desktop               active    
+16   GENERAL_INTERNET                 active    
+17   free5                            active    
+18   Velco_SimNetwork                 active    Gi1/0/13, Gi1/0/14, Gi1/0/28
+                                                Gi1/0/29, Gi1/0/32
+19   Cyberoam_Network                 active    
+20   DMZ                              active    Gi1/0/34
+21   Admin_Network                    active    Gi1/0/15, Gi1/0/17, Gi1/0/27
+                                                Gi1/0/36, Gi1/0/42
+22   Makuta_P2P                       active    
+23   Custsupprt_Network               active    
+24   VOIP                             active    Gi1/0/17
+25   FIO_Network                      active    
+26   Cirrus_Tunnel                    active    
+27   SS_TT_RDP_Network                active    
+28   Lattice_Network                  active    
+29   Atai_Network                     active    Gi1/0/9, Gi1/0/25
+30   Stanford_RDP_network             active    
+31   SoC_Wireless                     active    
+32   PhoneAccess_Ctrl_Net             active    Gi1/0/39
+33   DATACOPY                         active    
+40   P2P_All_Sites                    active    
+ --More--         
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+41   P2P-INEDA                        active    
+48   VLAN0048                         active    
+50   INTERNETTEST                     active    
+51   Access-Through-PubIP             active    
+65   VOICE                            active    Gi1/0/19, Gi1/0/20, Gi1/0/21
+67   VEDA                             active    
+70   WiFi-Mgmt                        active    Gi1/0/35
+100  TSMC                             active    
+110  INTEL-ODC                        active    
+114  AMD-VPN                          active    Gi1/0/33
+120  CS-SoC                           active    
+421  VLAN0421                         active    
+999  VLAN0999                         active    
+1002 fddi-default                     act/unsup 
+1003 trcrf-default                    act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trbrf-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+2    enet  100002     1500  -      -      -        -    -        0      0   
+3    enet  100003     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+4    enet  100004     1500  -      -      -        -    -        0      0   
+5    enet  100005     1500  -      -      -        -    -        0      0   
+6    enet  100006     1500  -      -      -        -    -        0      0   
+7    enet  100007     1500  -      -      -        -    -        0      0   
+8    enet  100008     1500  -      -      -        -    -        0      0   
+9    enet  100009     1500  -      -      -        -    -        0      0   
+10   enet  100010     1500  -      -      -        -    -        0      0   
+11   enet  100011     1500  -      -      -        -    -        0      0   
+12   enet  100012     1500  -      -      -        -    -        0      0   
+14   enet  100014     1500  -      -      -        -    -        0      0   
+15   enet  100015     1500  -      -      -        -    -        0      0   
+16   enet  100016     1500  -      -      -        -    -        0      0   
+17   enet  100017     1500  -      -      -        -    -        0      0   
+18   enet  100018     1500  -      -      -        -    -        0      0   
+19   enet  100019     1500  -      -      -        -    -        0      0   
+20   enet  100020     1500  -      -      -        -    -        0      0   
+21   enet  100021     1500  -      -      -        -    -        0      0   
+22   enet  100022     1500  -      -      -        -    -        0      0   
+23   enet  100023     1500  -      -      -        -    -        0      0   
+24   enet  100024     1500  -      -      -        -    -        0      0   
+25   enet  100025     1500  -      -      -        -    -        0      0   
+26   enet  100026     1500  -      -      -        -    -        0      0   
+27   enet  100027     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+28   enet  100028     1500  -      -      -        -    -        0      0   
+29   enet  100029     1500  -      -      -        -    -        0      0   
+30   enet  100030     1500  -      -      -        -    -        0      0   
+31   enet  100031     1500  -      -      -        -    -        0      0   
+32   enet  100032     1500  -      -      -        -    -        0      0   
+33   enet  100033     1500  -      -      -        -    -        0      0   
+40   enet  100040     1500  -      -      -        -    -        0      0   
+41   enet  100041     1500  -      -      -        -    -        0      0   
+48   enet  100048     1500  -      -      -        -    -        0      0   
+50   enet  100050     1500  -      -      -        -    -        0      0   
+51   enet  100051     1500  -      -      -        -    -        0      0   
+65   enet  100065     1500  -      -      -        -    -        0      0   
+67   enet  100067     1500  -      -      -        -    -        0      0   
+70   enet  100070     1500  -      -      -        -    -        0      0   
+100  enet  100100     1500  -      -      -        -    -        0      0   
+110  enet  100110     1500  -      -      -        -    -        0      0   
+114  enet  100114     1500  -      -      -        -    -        0      0   
+120  enet  100120     1500  -      -      -        -    -        0      0   
+421  enet  100421     1500  -      -      -        -    -        0      0   
+999  enet  100999     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 trcrf 101003     4472  1005   3276   -        -    srb      0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1005 trbrf 101005     4472  -      -      15       ibm  -        0      0   
+
+
+VLAN AREHops STEHops Backup CRF
+---- ------- ------- ----------
+1003 7       7       off
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+999
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+SS-CORE-SWITCH#sho
+SS-CORE-SWITCH#show in
+SS-CORE-SWITCH#show int
+SS-CORE-SWITCH#show interfaces g
+SS-CORE-SWITCH#show interfaces g 
+Vlan1 is administratively down, line protocol is down 
+  Hardware is EtherSVI, address is e840.404e.8dc0 (bia e840.404e.8dc0)
+  Internet address is 192.168.8.254/24
+  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive not supported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 1 interface resets
+     0 output buffer failures, 0 output buffers swapped out
+Vlan4 is up, line protocol is down 
+ --More--           Hardware is EtherSVI, address is e840.404e.8dc3 (bia e840.404e.8dc3)
+  Internet address is 192.168.26.254/24
+  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive not supported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output 00:46:36, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     10 packets output, 640 bytes, 0 underruns
+     0 output errors, 0 interface resets
+     0 output buffer failures, 0 output buffers swapped out
+Vlan7 is up, line protocol is up 
+  Hardware is EtherSVI, address is e840.404e.8dc4 (bia e840.404e.8dc4)
+ --More--           Internet address is 10.60.69.254/24
+  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive not supported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:01, output 00:00:01, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     226332 packets input, 80201141 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     17686 packets output, 1136134 bytes, 0 underruns
+     0 output errors, 0 interface resets
+     0 output buffer failures, 0 output buffers swapped out
+Vlan15 is administratively down, line protocol is down 
+  Hardware is EtherSVI, address is e840.404e.8dc5 (bia e840.404e.8dc5)
+  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec, 
+ --More--              reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive not supported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 1 interface resets
+     0 output buffer failures, 0 output buffers swapped out
+Vlan18 is up, line protocol is down 
+  Hardware is EtherSVI, address is e840.404e.8dc6 (bia e840.404e.8dc6)
+  Internet address is 192.168.44.254/24
+  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+ --More--         
+SS-CORE-SWITCH#show interfaces    gi
+SS-CORE-SWITCH#show interface gigabitEthernet 1/9 0/44
+GigabitEthernet1/0/44 is up, line protocol is up (connected) 
+  Hardware is Gigabit Ethernet, address is e840.404e.8dc2 (bia e840.404e.8dc2)
+  Description: ***Connected to New Campus***
+  Internet address is 10.254.7.6/28
+  MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 1000Mb/s, media type is 10/100/1000BaseTX
+  input flow-control is off, output flow-control is unsupported 
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     511694 packets input, 52662838 bytes, 0 no buffer
+     Received 511694 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 471284 multicast, 0 pause input
+ --More--              0 input packets with dribble condition detected
+     265722 packets output, 20984231 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 PAUSE output
+     0 output buffer failures, 0 output buffers swapped out
+SS-CORE-SWITCH# sho
+SS-CORE-SWITCH# show ip
+SS-CORE-SWITCH# show ipr
+SS-CORE-SWITCH# show ipro
+SS-CORE-SWITCH# show ipro  
+SS-CORE-SWITCH# show ip
+SS-CORE-SWITCH# show ip  ll
+SS-CORE-SWITCH# show lldp nei
+SS-CORE-SWITCH# show lldp neighbors 
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+gxp1615_000b829c8ec3Gi1/0/7        120        B,T             000b.829c.8ec3
+
+Total entries displayed: 1
+
+SS-CORE-SWITCH#in
+SS-CORE-SWITCH#int
+SS-CORE-SWITCH#int st
+SS-CORE-SWITCH#int stat
+SS-CORE-SWITCH#int status
+                ^
+% Invalid input detected at '^' marker.
+
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#int status          sh
+SS-CORE-SWITCH#sho
+SS-CORE-SWITCH#show ll
+SS-CORE-SWITCH#show lldp 
+
+Global LLDP Information:
+    Status: ACTIVE
+    LLDP advertisements are sent every 30 seconds
+    LLDP hold time advertised is 120 seconds
+    LLDP interface reinitialisation delay is 2 seconds
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#s 
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#show lldp neig
+SS-CORE-SWITCH#show lldp neighbors 
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+gxp1615_000b829c8ec3Gi1/0/7        120        B,T             000b.829c.8ec3
+
+Total entries displayed: 1
+
+SS-CORE-SWITCH#sh cdp neo i
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh ip int brie
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  192.168.8.254   YES NVRAM  administratively down down    
+Vlan4                  192.168.26.254  YES NVRAM  up                    down    
+Vlan7                  10.60.69.254    YES NVRAM  up                    up      
+Vlan15                 unassigned      YES NVRAM  administratively down down    
+Vlan18                 192.168.44.254  YES NVRAM  up                    down    
+Vlan21                 192.168.7.254   YES NVRAM  up                    down    
+Vlan24                 192.168.229.254 YES NVRAM  up                    down    
+Vlan29                 10.60.62.254    YES NVRAM  up                    down    
+Vlan65                 10.60.65.254    YES NVRAM  up                    up      
+Vlan67                 10.60.67.254    YES NVRAM  up                    down    
+Vlan70                 10.60.70.254    YES NVRAM  up                    down    
+Vlan114                192.168.114.254 YES NVRAM  up                    down    
+GigabitEthernet1/0/1   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/2   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/3   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/4   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/5   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/6   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/7   unassigned      YES unset  up                    up      
+GigabitEthernet1/0/8   unassigned      YES unset  administratively down down    
+GigabitEthernet1/0/9   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/10  unassigned      YES unset  down                  down    
+ --More--         GigabitEthernet1/0/11  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/12  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/13  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/14  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/15  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/16  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/17  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/18  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/19  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/20  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/21  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/22  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/23  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/24  unassigned      YES unset  administratively down down    
+GigabitEthernet1/0/25  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/26  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/27  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/28  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/29  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/30  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/31  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/32  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/33  unassigned      YES unset  down                  down    
+ --More--         
+SS-CORE-SWITCH#sh ar  ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  192.168.181.254         -   e840.404e.8dc1  ARPA   GigabitEthernet1/0/40
+Internet  10.60.69.23            55   f48e.3892.5e96  ARPA   Vlan7
+Internet  10.60.69.1              0   000b.829c.8ec3  ARPA   Vlan7
+Internet  192.168.229.254         -   e840.404e.8dc8  ARPA   Vlan24
+Internet  10.60.65.13             0   f8a0.3d30.3b88  ARPA   Vlan65
+Internet  10.60.65.11             0   f8a0.3d40.5db8  ARPA   Vlan65
+Internet  10.60.65.254            -   e840.404e.8dca  ARPA   Vlan65
+Internet  10.60.67.254            -   e840.404e.8dcb  ARPA   Vlan67
+Internet  192.168.26.254          -   e840.404e.8dc3  ARPA   Vlan4
+Internet  10.60.69.254            -   e840.404e.8dc4  ARPA   Vlan7
+Internet  10.60.70.254            -   e840.404e.8dcc  ARPA   Vlan70
+Internet  192.168.7.254           -   e840.404e.8dc7  ARPA   Vlan21
+Internet  10.60.65.210           56   000e.38ab.3100  ARPA   Vlan65
+Internet  192.168.44.254          -   e840.404e.8dc6  ARPA   Vlan18
+Internet  192.168.114.254         -   e840.404e.8dcd  ARPA   Vlan114
+Internet  10.254.7.3              0   Incomplete      ARPA   
+Internet  10.254.7.6              -   e840.404e.8dc2  ARPA   GigabitEthernet1/0/44
+Internet  10.60.62.254            -   e840.404e.8dc9  ARPA   Vlan29
+SS-CORE-SWITCH#ping 10.60.65.11
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.60.65.11, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/4/9 ms
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is 10.254.7.3 to network 0.0.0.0
+
+     10.0.0.0/8 is variably subnetted, 3 subnets, 2 masks
+C       10.60.69.0/24 is directly connected, Vlan7
+C       10.60.65.0/24 is directly connected, Vlan65
+C       10.254.7.0/28 is directly connected, GigabitEthernet1/0/44
+S*   0.0.0.0/0 [1/0] via 10.254.7.3
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh run int g1/0/44
+Building configuration...
+
+Current configuration : 208 bytes
+!
+interface GigabitEthernet1/0/44
+ description ***Connected to New Campus***
+ no switchport
+ ip address 10.254.7.6 255.255.255.240
+ storm-control broadcast level 4.00
+ storm-control multicast level 4.00
+end
+
+SS-CORE-SWITCH#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SS-CORE-SWITCH con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SS-CORE-SWITCH>en
+Password: 
+Password: 
+Password: 
+SS-CORE-SWITCH#en
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh run int g1/44
+                             ^
+% Invalid input detected at '^' marker.
+
+SS-CORE-SWITCH#sh run int g1/44044/44
+Building configuration...
+
+Current configuration : 208 bytes
+!
+interface GigabitEthernet1/0/44
+ description ***Connected to New Campus***
+ no switchport
+ ip address 10.254.7.6 255.255.255.240
+ storm-control broadcast level 4.00
+ storm-control multicast level 4.00
+end
+
+SS-CORE-SWITCH#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SS-CORE-SWITCH(config)#int g1/0/4
+SS-CORE-SWITCH(config-if)#ip add 10.254.7.2 255.255.255.252
+                               ^
+% Invalid input detected at '^' marker.
+
+SS-CORE-SWITCH(config-if)#ip add
+SS-CORE-SWITCH(config-if)#ip add?
+% Unrecognized command
+SS-CORE-SWITCH(config-if)#ip addre
+SS-CORE-SWITCH(config-if)#ip addre     ?
+Interface IP configuration subcommands:
+  access-group  Specify access control for packets
+  admission     Apply Network Admission Control
+  arp           Configure ARP features
+  auth-proxy    Apply authenticaton proxy
+  device        IP device tracking
+  dhcp          Configure DHCP parameters for this interface
+  igmp          IGMP interface commands
+  verify        verify
+  vrf           VPN Routing/Forwarding parameters on the interface
+
+SS-CORE-SWITCH(config-if)#ip    exi
+SS-CORE-SWITCH(config)#
+SS-CORE-SWITCH(config)#exiip add 10.254.7.2 255.255.255.252nt g1/0/4                       4
+SS-CORE-SWITCH(config-if)#ip add 10.254.7.2 255.255.255.252
+SS-CORE-SWITCH(config-if)#no sh
+SS-CORE-SWITCH(config-if)#exi
+SS-CORE-SWITCH(config)#
+SS-CORE-SWITCH(config)#
+SS-CORE-SWITCH(config)#do ping 10.254.7.2 1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.254.7.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 1/4/8 ms
+SS-CORE-SWITCH(config)#
+SS-CORE-SWITCH(config)#
+SS-CORE-SWITCH(config)#end
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh ip 
+*Mar  7 20:37:34.048: %SYS-5-CONFIG_I: Configured from console by consoleroute
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is 10.254.7.3 to network 0.0.0.0
+
+     10.0.0.0/8 is variably subnetted, 3 subnets, 2 masks
+C       10.60.69.0/24 is directly connected, Vlan7
+C       10.60.65.0/24 is directly connected, Vlan65
+C       10.254.7.0/30 is directly connected, GigabitEthernet1/0/44
+S*   0.0.0.0/0 [1/0] via 10.254.7.3
+SS-CORE-SWITCH#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SS-CORE-SWITCH(config)#no ip route 0.0.0.0 0.0.0.0 10.254.7.3
+SS-CORE-SWITCH(config)#no ip route 0.0.0.0 0.0.0.0 10.254.7.3 1no ip route 0.0.0.0 0.0.0.0 10.254.7.1  ip route 0.0.0.0 0.0.0.0 10.254.7.1 
+SS-CORE-SWITCH(config)#end
+SS-CORE-SWITCH#
+*Mar  7 20:38:02.628: %SYS-5-CONFIG_I: Configured from console by console
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#
+SS-CORE-SWITCH#sh ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is 10.254.7.1 to network 0.0.0.0
+
+     10.0.0.0/8 is variably subnetted, 3 subnets, 2 masks
+C       10.60.69.0/24 is directly connected, Vlan7
+C       10.60.65.0/24 is directly connected, Vlan65
+C       10.254.7.0/30 is directly connected, GigabitEthernet1/0/44
+S*   0.0.0.0/0 [1/0] via 10.254.7.1
+SS-CORE-SWITCH#m
+SS-CORE-SWITCH#m wr me
+SS-CORE-SWITCH#wr memory 
+Building configuration...
+[OK]
+SS-CORE-SWITCH#
